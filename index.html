@@ -18,11 +18,11 @@
             <div class="row">
                 <div class="col-sm">
                     <p id="MyName">Nome Cognome</p>
-                    <input id="my_input" type="text" placeholder="Inserisci il tuo nome">
+                    <input id="my_name" type="text" placeholder="Inserisci il tuo nome">
                 </div>
                 <div class="col-sm">
                     <p id="MyJourney">Km da percorrere</p>
-                    <input id="my_input" type="number" placeholder="Inserisci i km da percorrere">
+                    <input id="my_journey" type="number" placeholder="Inserisci i km da percorrere">
                 </div>
                 <div class="col-sm">
                     <p>Fascia d'età</p>
@@ -43,33 +43,35 @@
             </div>
 
         </div>
-
-        <h1>Il tuo biglietto</h1>
-
-        <div class="ticket_container">
-            <h3>Dettaglio passeggeri</h3>
-            <div class="ticket_subcontainer clearfix">
-                <div class="passenger_name">
-                  <h3>NOME PASSEGGERO</h3>
-                  <p id="passenger_name"></p> 
+        <div id="ticket" class="hidden input container">
+            <div class="row">
+                <div class="col-sm">
+                    <h1>Il tuo biglietto</h1>
+                    <h3>Dettaglio passeggeri</h3>
+                    <div class="ticket_subcontainer clearfix">
+                        <div class="passenger_name">
+                            <h3>NOME PASSEGGERO</h3>
+                            <p id="passenger_name"></p> 
+                        </div>
+                        <div class="table_div">
+                            <table>
+                                <tr>
+                                    <th>Offerta</th>
+                                    <th>Carrozza</th>
+                                    <th>Codice CP</th>
+                                    <th>Costo biglietto</th>
+                                </tr>
+                                <tr>
+                                    <th id="offer_type"></th>
+                                    <th id="coach"></th>
+                                    <th id="IP_code"></th>
+                                    <th id="price_ticket"></th>
+                                </tr>  
+                            </table>
+                        </div>
+                    </div>
                 </div>
-                <div class="table_div">
-                    <table>
-                        <tr>
-                          <th>Offerta</th>
-                          <th>Carrozza</th>
-                          <th>Codice CP</th>
-                          <th>Costo biglietto</th>
-                        </tr>
-                        <tr>
-                          <th id="offer_type"></th>
-                          <th id="coach"></th>
-                          <th id="IP_code"></th>
-                          <th id="price_ticket"></th>
-                        </tr>  
-                     </table>
-                </div>
-           </div>
+            </div>
         </div>
     </main>
     
